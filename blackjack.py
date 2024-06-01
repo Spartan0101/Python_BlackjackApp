@@ -1,5 +1,5 @@
 import random
-import os
+import pyautogui
 from art import logo
 
 ## The deck is unlimited in size.
@@ -85,7 +85,7 @@ def play_game():
     print(compare(user_score, computer_score))
 
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-    os.system('cls')
+    pyautogui.hotkey('command', 'l')
     play_game()
 #Hint 6: Create a function called calculate_score() that takes a List of cards as input
 #and returns the score.
